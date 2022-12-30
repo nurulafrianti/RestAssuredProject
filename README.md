@@ -1,5 +1,5 @@
 Pre-requisites:
-Java
-IDE IntelliJ / Eclipse
-Maven
-TestNG
+1. Java
+2. IDE IntelliJ / Eclipse
+3. Maven
+4. TestNG
