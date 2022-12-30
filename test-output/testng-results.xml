@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="2910" started-at="2022-12-30T16:24:41 WIB" finished-at="2022-12-30T16:24:43 WIB">
+    <groups>
+    </groups>
+    <test name="RestAssuredProject" duration-ms="2910" started-at="2022-12-30T16:24:41 WIB" finished-at="2022-12-30T16:24:43 WIB">
+      <class name="APITest">
+        <test-method status="PASS" signature="test1()[pri:0, instance:APITest@d8355a8]" name="test1" duration-ms="2742" started-at="2022-12-30T16:24:41 WIB" finished-at="2022-12-30T16:24:43 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:APITest@d8355a8]" name="test2" duration-ms="135" started-at="2022-12-30T16:24:43 WIB" finished-at="2022-12-30T16:24:43 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- APITest -->
+    </test> <!-- RestAssuredProject -->
+  </suite> <!-- Default Suite -->
+</testng-results>
