@@ -1,3 +1,5 @@
+package FakeRestApi;
+
 import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
@@ -5,14 +7,11 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.*;
 
-public class FakeRestApiPut {
-
+public class FakeRestApiPatch {
     @Test
-    public void testFakeRestApiPut() {
+    public void testFakeRestApiPatch() {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("firstName", "Taylor Put Test");
-        jsonObject.put("lastName", "Swift Put Test");
-        jsonObject.put("subjectId", 1);
+        jsonObject.put("lastName", "Malik Patch Test");
 
         baseURI = "http://localhost:3000/";
         given().
@@ -21,7 +20,7 @@ public class FakeRestApiPut {
                 header("Content-Type", "application/json").
                 body(jsonObject.toJSONString()).
         when().
-                put("/users/4").
+                patch("/users/4").
         then().
                 statusCode(200).
                 log().all();

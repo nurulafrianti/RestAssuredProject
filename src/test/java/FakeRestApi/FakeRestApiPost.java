@@ -1,3 +1,5 @@
+package FakeRestApi;
+
 import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
