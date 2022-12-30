@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
 public class TestPost {
 
     @Test
-    public void testPost1() {
+    public void testPost() {
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("name", "Nurul");

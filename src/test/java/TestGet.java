@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.*;
 public class TestGet {
 
     @Test
-    public void testGet1() {
+    public void testGet() {
         given().
                 header("Content-Type", "application/json").
                 get("https://reqres.in/api/users?page=2").

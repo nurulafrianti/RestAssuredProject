@@ -2,26 +2,26 @@ import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.*;
 
-public class TestPut {
+public class FakeRestApiPut {
 
     @Test
-    public void testPut() {
+    public void testFakeRestApiPut() {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("name", "Nurul");
-        jsonObject.put("job", "SEIT");
+        jsonObject.put("firstName", "Taylor Put Test");
+        jsonObject.put("lastName", "Swift Put Test");
+        jsonObject.put("subjectId", 1);
 
-        System.out.println("JSONObject to JSONString PUT: " +jsonObject.toJSONString());
-        System.out.println("JSONObject PUT: " +jsonObject);
-
+        baseURI = "http://localhost:3000/";
         given().
-                header("Content-Type", "application/json").
                 contentType(ContentType.JSON).
                 accept(ContentType.JSON).
+                header("Content-Type", "application/json").
                 body(jsonObject.toJSONString()).
         when().
-                put("https://reqres.in/api/users/2").
+                put("/users/4").
         then().
                 statusCode(200).
                 log().all();
