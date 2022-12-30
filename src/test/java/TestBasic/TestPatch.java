@@ -1,4 +1,4 @@
-package TestCrud;
+package TestBasic;
 
 import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
